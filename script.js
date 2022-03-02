@@ -10,27 +10,39 @@ const btn = document.querySelector('#Play')
 const container = document.querySelector('.container');
 
 btn.addEventListener('click', function() {
+    container.innerHTML = ''
     if(livel.value == 'Easy'){
         for (let i = 1; i <= 49; i++){
             let item = document.createElement('div');
             item.classList.add('square');
+            item.classList.add('easy')
             item.innerHTML = i;
             container.append(item);
-            
+            item.addEventListener('click', function(){
+                item.classList.add('select-quadrato')
+            })
         }
     }else if(livel.value == 'Medium'){
         for (let i = 1; i <= 81; i++){
-        let item = document.createElement('div');
-        item.classList.add('square');
-        item.innerHTML = i;
-        container.append(item);
+            let item = document.createElement('div');
+            item.classList.add('square');
+            item.classList.add('medium');
+            item.innerHTML = i;
+            container.append(item);
+            item.addEventListener('click', function(){
+                item.classList.add('select-quadrato')
+            })
         }
     }else{
         for (let i = 1; i <= 100; i++){
-        let item = document.createElement('div');
-        item.classList.add('square');
-        item.innerHTML = i;
-        container.append(item);
+            let item = document.createElement('div');
+            item.classList.add('square');
+            item.classList.add('hard');
+            item.innerHTML = i;
+            container.append(item);
+            item.addEventListener('click', function(){
+                item.classList.add('select-quadrato')
+            })
         }
     }
 })
