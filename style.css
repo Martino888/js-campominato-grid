@@ -21,6 +21,11 @@ header{
 
 #logo{
     flex-shrink: 0;
+    display: flex;
+}
+
+.h1{
+    padding-left : 1em;
 }
 
 #nav-destra{
@@ -60,5 +65,19 @@ header{
     justify-content: center;
     width: 700px;
     margin:30px auto;
+    
+}
+
+
+footer{
+    background-color: antiquewhite;
+}
+
+.nav-fixed-bottom{
+    margin-bottom:0;
+}
+
+p{
+    margin-right: 1em;
     
 }
