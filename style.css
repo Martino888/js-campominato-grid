@@ -12,7 +12,7 @@ body{
 
 header{
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,24 +46,25 @@ header{
 
 .easy{
     width: calc(100% / 7 ) ;
-    height: 100px ;
+    height: 50px ;
 }
 
 .medium{
     width: calc(100% / 9 ) ;
-    height: 78px;
+    height: 40px;
 }
 
 .hard{
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 700px;
+    width: 400px;
+    height: 300px;
     margin:30px auto;
     
 }
@@ -71,14 +72,17 @@ header{
 
 footer{
     background-color: antiquewhite;
-    margin-bottom: 0;
+    height:30px;
+    overflow: hidden;
 }
 
 .nav-fixed-bottom{
    margin-left: 100px;
+   margin-top: 3px;
 }
 
-p{
-   
-    
+main {
+    height: calc(100vh - 5rem);
+    color: white;
+    overflow-y: auto;
 }
