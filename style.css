@@ -71,13 +71,14 @@ header{
 
 footer{
     background-color: antiquewhite;
+    margin-bottom: 0;
 }
 
 .nav-fixed-bottom{
-    margin-bottom:0;
+   margin-left: 100px;
 }
 
 p{
-    margin-right: 1em;
+   
     
 }
